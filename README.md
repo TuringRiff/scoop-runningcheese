@@ -1,42 +1,42 @@
-# Scoop Bucket Template
+# Scoop RunningCheese Bucket
 
-<!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+[![Scoop Bucket](https://img.shields.io/badge/Scoop-Bucket-blue.svg)](https://scoop.sh)
 
-Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
+奔跑中的奶酪（RunningCheese）定制版便携浏览器 Scoop Bucket。
 
-## How do I use this template?
+## 📦 包含的应用
 
-1. Generate your own copy of this repository with the "Use this template"
-   button.
-2. Allow all GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Actions permissions`.
-   - Select `Allow all actions and reusable workflows`.
-   - Then `Save`.
-3. Allow writing to the repository from within GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Workflow permissions`.
-   - Select `Read and write permissions`.
-   - Then `Save`.
-4. Document the bucket in `README.md`.
-5. Replace the placeholder repository string in `bin/auto-pr.ps1`.
-6. Create new manifests by copying `bucket/app-name.json.template` to
-   `bucket/<app-name>.json`.
-7. Commit and push changes.
-8. If you'd like your bucket to be indexed on `https://scoop.sh`, add the
-   topic `scoop-bucket` to your repository.
+- **RunningCheese Chrome** (`runningcheesechrome`) - RunningCheese Chrome 定制版便携浏览器
+- **RunningCheese Firefox** (`runningcheesefirefox`) - RunningCheese Firefox 定制版便携浏览器
+- **RunningCheese Zen** (`runningcheesezen`) - RunningCheese Zen 定制版便携浏览器
 
-## How do I install these manifests?
+## 🚀 安装方法
 
-After manifests have been committed and pushed, run the following:
+### 1. 添加 Bucket
 
 ```pwsh
-scoop bucket add <bucketname> https://github.com/<username>/<bucketname>
-scoop install <bucketname>/<manifestname>
+scoop bucket add runningcheese https://github.com/TuringRiff/scoop-runningcheese
 ```
 
-## How do I contribute new manifests?
+### 2. 安装浏览器
 
-To make a new manifest contribution, please read the [Contributing
-Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
-and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
-wiki page.
+```pwsh
+# 安装 Chrome 定制版
+scoop install runningcheese/runningcheesechrome
+
+# 安装 Firefox 定制版
+scoop install runningcheese/runningcheesefirefox
+
+# 安装 Zen 定制版
+scoop install runningcheese/runningcheesezen
+```
+
+## 🔄 更新方法
+
+```pwsh
+scoop update runningcheesechrome
+scoop update runningcheesefirefox
+scoop update runningcheesezen
+```
+
+> **提示**：更新时 Scoop 会自动保持并迁移用户配置（Profiles / Data / Tools），无需手动备份。
