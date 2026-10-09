@@ -1,12 +1,12 @@
 {
-    "version": "1.3.0",
+    "version": "1.5.0",
     "description": "RunningCheese Firefox 定制版便携浏览器",
     "homepage": "https://www.runningcheese.com/firefox",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/TuringRiff/browser-pkg-test/releases/download/v1.3.0/RunningCheeseFirefox.7z",
-            "hash": "acf2b553bbbbde52d5134179213331f8cc3024a5b0fa487f36a8feb6ea4bbc2f"
+            "url": "https://github.com/TuringRiff/browser-pkg-test/releases/download/v1.5.0/RunningCheeseFirefox.7z",
+            "hash": "b80c9dfe8237dd4e1c7b990adb0cbe8e0868efa4e9a9772b48bb57344263aacd"
         }
     },
     "post_install": [
